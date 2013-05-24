@@ -7,12 +7,13 @@ date: 2012-11-09
 
 
 
-* Site source on Github: [cboettig/labnotebook](http://github.com/cboettig/labnotebook).
-* Please [report errors or give feedback](https://github.com/cboettig/labnotebook/issues).
+* Site source on Github: [antass/labnotebook](http://github.com/antass/labnotebook).
+* Please [report errors or give feedback](https://github.com/antass/labnotebook/issues).
 
 Site Features & Credits
 =======================
 
+* Site design and scaffolding forked from [Carl Boettiger's labnotebook repo](https://github.com/cboettig/labnotebook)
 * Colors and syntax highlighting with [Solarized](http://ethanschoonover.com/solarized) 
 * Crisp equations rendered in [Mathjax](http://www.mathjax.org/)
 * Reproducible code execution with [knitr](http://yihui.name/knitr/)
@@ -20,11 +21,12 @@ Site Features & Credits
 * Scalable css icons from [FontAwesome](http://fortawesome.github.com/Font-Awesome)
 * Static site generation with [Jekyll](https://github.com/mojombo/jekyll)
 * Markdown parsing with [pandoc](http://johnmacfarlane.net/pandoc/) 
-* Twitter, Mendeley & Github [custom plugins](https://github.com/cboettig/labnotebook/tree/master/_plugins)
+* Twitter, Mendeley & Github [Carl Boettoger custom plugins](https://github.com/cboettig/labnotebook/tree/master/_plugins)
 * [Carbon-neutral site](http://www.dreamhost.com/green.cgi) hosting by [Dreamhost](http://dreamhost.org)
 * Source code hosting on [Github](https://github.com/)
-* Uptime monitoring from my.pingdom.com; see [status report](http://stats.pingdom.com/fy1sae94ydyi/616612)
-* CDN from [cloudflare](https://www.cloudflare.com/)
+
+Below are notes from Carl Boettiger's lab notebook
+==================================================
 
 Notebook Archiving & Data Management
 ====================================

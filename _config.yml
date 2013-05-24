@@ -1,4 +1,4 @@
-## Standard Jeyll config options
+## Standard Jekyll config options
 permalink: /:year/:month/:day/:title.html
 exclude: [ _posts/source/, _posts/_private/, assets/figures]
 lunr_excludes: [atom.xml, 404.html, search.html, categories.md, tags.md, calendar.md]
@@ -16,20 +16,20 @@ lunrsearch: no    ## Javascript will still be included, but Jekyll won't build t
 ## Useful metadata, available to a liquid filter as site.title, site.author.name, etc
 ## Used in _inculdes templates headers and footers.  
 title: Lab Notebook 
-tagline: Theoretical ecology and evolution
+tagline: Genetics and Genomics of Lung Cancer
 author:
-  name: Carl Boettiger
-  email: cboettig@gmail.com
-  givenName: Carl
-  familyName: Boettiger
-  twitter: cboettig
-  github: cboettig
-  mendeley: carl-boettiger
-url: http://www.carlboettiger.info
-repo: https://github.com/cboettig/labnotebook # used in linking history
+  name: Ania Tassinari
+  email: ania.tassinari@gmail.com
+  givenName: Ania
+  familyName: Tassinari
+  twitter: antass
+  github: antass
+  mendeley: anna-tassinari
+#url: http://www.carlboettiger.info
+repo: https://github.com/antass/labnotebook # used in linking history
 
 ## Google Analytics key (in _includes/analytics.html)
-analytics: UA-18401403-1 
+analytics: UA-37614568-1 
 
 
 ## Markdown Parser (standard Jekyll argument, extended to special parser)

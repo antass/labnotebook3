@@ -1,5 +1,5 @@
 ---
-title: Early warning signals for ecological regime shifts  
+title: Microoarray Airway Meta-Analysis  
 layout: project
 tag: meta-analysis 
 github: metanalysis
@@ -7,57 +7,30 @@ github: metanalysis
 ---
 
 {% capture project_abstract %} 
+**Microarray meta-analysis of airway datasets using a systems biology approach.**
 
-Can we predict the approach of a regime shift before it happens? Without
-having observed a transition it may be impossible to identify mechanistic
-models of the responsible processes.  Despite this limitation, we may find
-certain patterns typical of systems approaching a critical transition
-that could provide an early warning signal of a shift (Scheffer et
-al. 2009). This is both an exciting possibility and an immense challenge -
-even detailed models frequently fail to provide accurate forecasts when
-extrapolated beyond the range of the data. The highly nonlinear nature of
-regime shifts and the lack of data outside of the current regime makes
-this forecasting problem even more challenging. A potential indicator
-that is too general risks false positives that do not correspond to
-an approaching transition, while specific indicators may miss more
-transitions. I was recently able to quantify these probabilities of
-false alarms and missed detections and investigate the trade-off between
-these errors for proposed early warning indicators (Boettiger & Hastings
-2012). We further introduced a generic model-based indicator that can
-better minimize both errors at once.
-
-Better indicators and approaches that can synthesize large and diverse
-data streams may improve such forecasts, but predicting regime shifts will
-always be an uncertain business. We may at best quantify the probability
-that a regime shift will occur, a percent chance of a transition. How to
-we decide what actions to take in face of such valuable but incomplete
-information? These questions have spurred me to explore questions in
-optimal control and decision theory, which I am exploring during my
-post-doctoral work (see Nonparametric-Bayes and Multiple Uncertainty).
-
+I am working on putting together a comprehensive study of multiple airway epithelium microarray datasets from patients with varying lung cancer and COPD status, as well as smoking history. By examining data from a network biology perspective, I am hoping to elucidate the gene regulatory mechanisms that govern the onset and progression of these diseases.
 {% endcapture %} 
 
 {% capture project_collaborators %}
-- Alan Hastings 
-- Noam Ross 
+- Jen Beane 
 
 {% endcapture %}
 
 {% capture project_funding %}
-- Department of Energy Computational Sciences Graduate Fellowship 
-- Center for Population Biology, UC Davis 
+- NSF IGERT Fellowship 
 
 {% endcapture %}
 
 
 {% capture project_issues %}
-_issues feed from earlwarning repo. Also see [ews-review](https://github.com/cboettig/ews-review) for a separate warning-signals repository for a recent concepts paper only._
+_Issues feed from metanalysis repo.
 
 {% octokit_issues metanalysis%}
 {% endcapture %}
 
 {% capture project_commits %}
-_This commits feed from master branch. Note that Prosecutor's Fallacy research and paper was developed on [prosecutor](https://github.com/cboettig/earlywarning/tree/prosecutor) branch of this repository._
+_This commits feed from master branch. 
 
 {% octokit_commits metanalysis%}
 {% endcapture %}
@@ -68,7 +41,7 @@ _This commits feed from master branch. Note that Prosecutor's Fallacy research a
 {% capture reading_list %}http://mendeley.com/groups/530001/early-warning-signs/papers{% endcapture %}
 
 {% capture project_entries %}
-{% for post in site.tags.warning-signals limit:8 %}
+{% for post in site.tags.meta-analysis limit:8 %}
 <p> <a href="{{ post.url }}">{{ post.title }}</a> 
 <span style="font-style:italic"> {{ post.date | date_to_string }}</span></p>
 {% endfor %}

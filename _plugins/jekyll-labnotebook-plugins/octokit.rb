@@ -22,10 +22,10 @@ module Jekyll
     def initialize(tag_name, text, tokens)
       super
       @text = text
-      @address = "cboettig/"+"#{@text}"
+      @address = "antass/"+"#{@text}"
     end
     def render(context) # learn how to write this to take an argument!
-      cred = YAML.load_file("/home/cboettig/.github_cred.yml")
+      cred = YAML.load_file("/home/ania/.github_cred.yml")
       client = Octokit::Client.new(:login => cred[:username], :password => cred[:password])
       repo = client.issues(@address) # grab the data. Can this go in "initialize?"
       #  repo = Octokit.issues(@address, :status => "closed") # (Gets closed issues??)
@@ -63,14 +63,14 @@ module Jekyll
     def initialize(tag_name, text, tokens)
       super
       @text = text
-      @address = "cboettig/"+"#{@text}"
+      @address = "antass/"+"#{@text}"
     end
     def render(context)
       # day = Time.now # context.environments.first["page"]["date"]
       # @until = Chronic.parse("Now") #(day + 60*60*24).iso8601
       # @since = Chronic.parse("One day ago") #day.iso8601
       # repo = Octokit.commits(@address, "master", {:since => @since, :until => @until}) 
-      cred = YAML.load_file("/home/cboettig/.github_cred.yml")
+      cred = YAML.load_file("/home/ania/.github_cred.yml")
       client = Octokit::Client.new(:login => cred[:username], :password => cred[:password])
       repo = client.commits(@address, "master")
       out = "<ul>"
