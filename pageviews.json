@@ -1,13 +1,21 @@
 {
   "/labnotebook/": [
     "1",
-    "15"
+    "16"
   ],
   "/labnotebook//community.html": [
     "0",
     "1"
   ],
+  "/labnotebook//index.html": [
+    "0",
+    "1"
+  ],
   "/labnotebook//lab-notebook.html": [
+    "0",
+    "5"
+  ],
+  "/labnotebook//research.html": [
     "1",
     "2"
   ],
@@ -15,9 +23,13 @@
     "0",
     "1"
   ],
+  "/labnotebook/2013/05/24/meeting-with-marc.html": [
+    "0",
+    "2"
+  ],
   "/labnotebook/index.html": [
     "1",
-    "8"
+    "9"
   ],
   "/labnotebook/lab-notebook.html": [
     "1",
