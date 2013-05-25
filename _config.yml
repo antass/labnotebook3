@@ -28,8 +28,8 @@ author:
 url: http://www.aniatassinari.com/labnotebook
 repo: https://github.com/antass/labnotebook # used in linking history
 base_path: http://www.aniatassinari.com/labnotebook
-production_url: http://www.aniatassinari.com/labnoteboo
-k
+production_url: http://www.aniatassinari.com/labnotebook
+
 ## Google Analytics key (in _includes/analytics.html)
 analytics: UA-37614568-1 
 
