@@ -25,7 +25,7 @@ author:
   twitter: antass
   github: antass
   mendeley: anna-tassinari
-#url: http://www.carlboettiger.info
+url: http://www.carlboettiger.info
 repo: https://github.com/antass/labnotebook # used in linking history
 
 ## Google Analytics key (in _includes/analytics.html)
