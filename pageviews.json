@@ -1,7 +1,7 @@
 {
   "/labnotebook/": [
     "1",
-    "24"
+    "25"
   ],
   "/labnotebook//community.html": [
     "0",
@@ -24,16 +24,16 @@
     "1"
   ],
   "/labnotebook/2013/04/29/finishing-comparison-parametric-and-nonparametric-2.html": [
-    "1",
-    "1"
+    "0",
+    "3"
   ],
   "/labnotebook/2013/05/24/meeting-with-marc.html": [
     "1",
     "3"
   ],
   "/labnotebook/2013/05/25/notes-conts.html": [
-    "1",
-    "13"
+    "2",
+    "16"
   ],
   "/labnotebook/archive.html": [
     "0",
@@ -44,12 +44,16 @@
     "10"
   ],
   "/labnotebook/lab-notebook.html": [
-    "1",
-    "18"
+    "2",
+    "22"
+  ],
+  "/labnotebook/labnotebook/2013/05/24/meeting-with-marc.html": [
+    "0",
+    "2"
   ],
   "/labnotebook/labnotebook/2013/05/25/notes-conts.html": [
     "0",
-    "2"
+    "3"
   ],
   "/labnotebook/projects/meta-analysis.html": [
     "0",
