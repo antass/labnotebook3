@@ -13,23 +13,23 @@
           data-placement="bottom"><i style="float:right;" class="icon-info-sign" alt="info"></i></span></a>
       <div class="nav-collapse">
         <ul class="nav">
-          {% if page.url == "/index.html" %}<li class="active">{% else %}<li>{% endif %}
-          <a href="/index.html">Home</a></li>
+          {% if page.url == "{{site.url}}/index.html" %}<li class="active">{% else %}<li>{% endif %}
+	  <a href="{{site.url}}/index.html">Home</a></li>
 
-          {% if page.url == "/vita.html" %}<li class="active">{% else %}<li>{% endif %}
-          <a href="/vita.html">Vita</a></li>
+          {% if page.url == "{{site.url}}/vita.html" %}<li class="active">{% else %}<li>{% endif %}
+          <a href="{{site.url}}/vita.html">Vita</a></li>
 
-          {% if page.url == "/research.html" %}<li class="active">{% else %}<li>{% endif %}
-          <a href="/research.html">Research</a></li>
+          {% if page.url == "{{site.url}}/research.html" %}<li class="active">{% else %}<li>{% endif %}
+          <a href="{{site.url}}/research.html">Research</a></li>
 
-          {% if page.url == "/teaching.html" %}<li class="active">{% else %}<li>{% endif %}
-          <a href="/teaching.html">Teaching</a></li>
+          {% if page.url == "{{site.url}}/teaching.html" %}<li class="active">{% else %}<li>{% endif %}
+          <a href="{{site.url}}/teaching.html">Teaching</a></li>
 
-          {% if page.url == "/community.html" %}<li class="active">{% else %}<li>{% endif %}
-          <a href="/community.html">Community</a></li>
+          {% if page.url == "{{site.url}}/community.html" %}<li class="active">{% else %}<li>{% endif %}
+          <a href="{{site.url}}/community.html">Community</a></li>
 
-          {% if page.url == "/lab-notebook.html" %}<li class="active">{% else %}<li>{% endif %}
-          <a href="/lab-notebook.html">Lab Notebook</a></li>
+          {% if page.url == "{{site.url}}/lab-notebook.html" %}<li class="active">{% else %}<li>{% endif %}
+          <a href="{{site.url}}/lab-notebook.html">Lab Notebook</a></li>
 
         </ul>
       </div><!--/.nav-collapse -->
