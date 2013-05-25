@@ -25,12 +25,14 @@ author:
   twitter: antass
   github: antass
   mendeley: anna-tassinari
-url: http://www.carlboettiger.info
+url: http://www.aniatassinari.com/labnotebook/
 repo: https://github.com/antass/labnotebook # used in linking history
 
 ## Google Analytics key (in _includes/analytics.html)
 analytics: UA-37614568-1 
 
+## Set base_path for links
+baseurl: http://www.aniatassinari.com/labnotebook
 
 ## Markdown Parser (standard Jekyll argument, extended to special parser)
 markdown: pandoc

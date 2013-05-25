@@ -9,6 +9,6 @@ git push
 jekyll --server 4003
 
 ## Copy site to repository for github hosting
-rsync -az _site/ ~/dreamhost/labnotebook  
+rsync -avz --checksum /home/ania/Dropbox/labnotebook/_site/ antass@quicksilver.dreamhost.com/labnotebook  
 echo "Site updated and uploaded to Dreamhost"
 
