@@ -1,7 +1,7 @@
 {
   "/labnotebook/": [
     "1",
-    "16"
+    "20"
   ],
   "/labnotebook//community.html": [
     "0",
@@ -16,7 +16,7 @@
     "5"
   ],
   "/labnotebook//research.html": [
-    "1",
+    "0",
     "2"
   ],
   "/labnotebook//teaching.html": [
@@ -24,8 +24,16 @@
     "1"
   ],
   "/labnotebook/2013/05/24/meeting-with-marc.html": [
+    "1",
+    "3"
+  ],
+  "/labnotebook/2013/05/25/notes-conts.html": [
+    "1",
+    "6"
+  ],
+  "/labnotebook/archive.html": [
     "0",
-    "2"
+    "7"
   ],
   "/labnotebook/index.html": [
     "1",
@@ -33,7 +41,11 @@
   ],
   "/labnotebook/lab-notebook.html": [
     "1",
-    "4"
+    "9"
+  ],
+  "/labnotebook/labnotebook/2013/05/25/notes-conts.html": [
+    "0",
+    "2"
   ],
   "/labnotebook/vita.html": [
     "0",
