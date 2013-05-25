@@ -12,6 +12,6 @@ jekyll
 
 ## Copy site to repository for github hosting
 echo 'Uploading site to Dreamhost'
-rsync -avz --checksum /home/ania/Dropbox/labnotebook/_site/ antass@quicksilver.dreamhost.com:labnotebook  
+rsync -avz --checksum /home/ania/Dropbox/labnotebook/_site/ antass@quicksilver.dreamhost.com:aniatassinari.com/labnotebook  
 echo "Site updated and uploaded to Dreamhost"
 
