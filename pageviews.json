@@ -1,14 +1,30 @@
 {
   "/labnotebook/": [
     "1",
-    "13"
+    "15"
+  ],
+  "/labnotebook//community.html": [
+    "0",
+    "1"
+  ],
+  "/labnotebook//lab-notebook.html": [
+    "1",
+    "2"
+  ],
+  "/labnotebook//teaching.html": [
+    "0",
+    "1"
   ],
   "/labnotebook/index.html": [
-    "2",
-    "7"
+    "1",
+    "8"
   ],
   "/labnotebook/lab-notebook.html": [
     "1",
     "4"
+  ],
+  "/labnotebook/vita.html": [
+    "0",
+    "1"
   ]
 }
