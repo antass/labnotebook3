@@ -1,5 +1,5 @@
 ## Standard Jekyll config options
-permalink: http://www.aniatassinari.com/labnotebook/:year/:month/:day/:title.html
+permalink: labnotebook/:year/:month/:day/:title.html
 exclude: [ _posts/source/, _posts/_private/, assets/figures]
 lunr_excludes: [atom.xml, 404.html, search.html, categories.md, tags.md, calendar.md]
 
@@ -25,7 +25,7 @@ author:
   twitter: antass
   github: antass
   mendeley: anna-tassinari
-url: http://www.aniatassinari.com/labnotebook/
+url: http://www.aniatassinari.com/labnotebook
 repo: https://github.com/antass/labnotebook # used in linking history
 
 ## Google Analytics key (in _includes/analytics.html)
