@@ -33,7 +33,6 @@ base_path: http://www.aniatassinari.com/labnotebook
 analytics: UA-37614568-1 
 
 ## Set base_path for links
-baseurl: http://www.aniatassinari.com/labnotebook
 
 ## Markdown Parser (standard Jekyll argument, extended to special parser)
 markdown: pandoc
