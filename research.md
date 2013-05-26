@@ -7,7 +7,7 @@ date: 2013-04-02
 
 <div class="span7">
 
-<img src="{{site.url}}/assets/img/wadirum.png" style="float:right; margin: 10px 10px;"/>
+<img src="/assets/img/wadirum.png" style="float:right; margin: 10px 10px;"/>
 I am interested in a variety of problems in theoretical
 ecology and evolution that are closely related at least in my
 own head if no where else.  I enjoy questions of ["Pasteur's Quadrant"](http://en.wikipedia.org/wiki/Pasteur%27s_quadrant), basic
