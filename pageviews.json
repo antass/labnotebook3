@@ -1,7 +1,27 @@
 {
   "/": [
-    "1",
+    "0",
+    "3"
+  ],
+  "/2013/05/24/meeting-with-marc.html": [
+    "0",
     "1"
+  ],
+  "/2013/05/25/notes-conts.html": [
+    "1",
+    "5"
+  ],
+  "/archive.html": [
+    "0",
+    "1"
+  ],
+  "/categories.html": [
+    "0",
+    "1"
+  ],
+  "/lab-notebook.html": [
+    "0",
+    "6"
   ],
   "/labnotebook/": [
     "2",
@@ -94,5 +114,13 @@
   "/labnotebook/vita.html": [
     "0",
     "1"
+  ],
+  "/research.html": [
+    "0",
+    "1"
+  ],
+  "/tags.html": [
+    "0",
+    "2"
   ]
 }
