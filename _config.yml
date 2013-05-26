@@ -45,4 +45,6 @@ pandoc:
 #    - self-contained                             # Archive images in posts as URIs.  Very slow, for archiving only.  
 #    - mathml                                     # Use mathml for equations (Archival, HTML5/XML valid syntax)
 
-
+## Comments
+comments :
+  provider : false
