@@ -9,8 +9,8 @@ tags:
 ## To-do for tomorrow
 
 1. [ ] *Sanity check*: 
-	- Ylinked genes in sex-related modules
-	- smoking genes
+	- [x] Ylinked genes in sex-related modules
+	- [x] smoking genes
 	- cancer genes
 1. [ ] Regenerate eigengene heatmaps for each set
 2. [ ] Make eigengene heatmaps for each pair of sets (Lam vs. Allegro, Lam vs. Airway, etc.)
