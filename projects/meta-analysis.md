@@ -24,21 +24,21 @@ I am working on putting together a comprehensive study of multiple airway epithe
 
 
 {% capture project_issues %}
-_Issues feed from metanalysis repo.
+Issues feed from metanalysis repo.
 
 {% octokit_issues metanalysis%}
 {% endcapture %}
 
 {% capture project_commits %}
-_This commits feed from master branch. 
+This commits feed from master branch. 
 
 {% octokit_commits metanalysis%}
 {% endcapture %}
 
 {% capture project_feed %}
-{% mendeley_feed 530001/early-warning-signs, 4 %}
+{% mendeley_feed 3384511/microarray-airway-meta-analysis, 4 %}
 {% endcapture %}
-{% capture reading_list %}http://mendeley.com/groups/530001/early-warning-signs/papers{% endcapture %}
+{% capture reading_list %}http://www.mendeley.com/groups/3384511/microarray-airway-meta-analysis/papers/{% endcapture %}
 
 {% capture project_entries %}
 {% for post in site.tags.meta-analysis limit:8 %}
