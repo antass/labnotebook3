@@ -25,8 +25,10 @@ module Jekyll
       @address = "antass/"+"#{@text}"
     end
     def render(context) # learn how to write this to take an argument!
+      puts "Getting Github Issues via octokit.rb"
+
       cred = YAML.load_file("/home/ania/.github_cred.yml")
-      client = Octokit::Client.new(:login => cred[:username], :password => cred[:password])
+      client = Octokit::Client.new(:login => cred[":username"], :password => cred[":password"])
       repo = client.issues(@address) # grab the data. Can this go in "initialize?"
       #  repo = Octokit.issues(@address, :status => "closed") # (Gets closed issues??)
       # Generate a list of all open issues, linking to github issue page.  
@@ -66,12 +68,13 @@ module Jekyll
       @address = "antass/"+"#{@text}"
     end
     def render(context)
+      puts "Getting Github Commits via octokit.rb"
       # day = Time.now # context.environments.first["page"]["date"]
       # @until = Chronic.parse("Now") #(day + 60*60*24).iso8601
       # @since = Chronic.parse("One day ago") #day.iso8601
       # repo = Octokit.commits(@address, "master", {:since => @since, :until => @until}) 
       cred = YAML.load_file("/home/ania/.github_cred.yml")
-      client = Octokit::Client.new(:login => cred[:username], :password => cred[:password])
+      client = Octokit::Client.new(:login => cred[":username"], :password => cred[":password"])
       repo = client.commits(@address, "master")
       out = "<ul>"
       for i in 0 ... [repo.size, 8].min

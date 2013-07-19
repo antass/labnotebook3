@@ -49,38 +49,18 @@ module Jekyll
       dimensions :page_path
   end
 
-
-  class GoogleAnalytics < Liquid::Block
-    def initialize(tag_name, markup, tokens)
-      super # options that appear in block (between tag and endtag)
-      @options = markup # optional optionss passed in by opening tag
-    end
-    def render(context)
-      path = super
-      
-      buffer = open('../pageviews.json')
-      result = JSON.load(buffer) 
-
-      if defined?(result[path][1]) 
-        views = result[path][1]
-      else 
-        views = "(not calculated)"
-      end
-      views
-    end
-  end
-
-
-
   class AnalyticsGenerator < Generator
 
     safe true
     priority :low
       
       def generate(site)
+
+        puts "Getting Google Analytics data"
          ## Set timeouts to be extra patient if necessary
 #        Garb.open_timeout = 120 # 2 minute timeout
 #        Garb.read_timeout = 120 # 2 minute timeout
+        
         ## Read in credentials and authenticate 
         cred = YAML.load_file("/Users/antass/.garb_auth.yaml")
 
@@ -95,13 +75,19 @@ module Jekyll
                              :start_date => Chronic.parse("2011-01-01"))
         result = Hash[data.collect{|row| [row.page_path, [row.exits, row.pageviews]]}]
 
-        File.open("pageviews.json","w") do |f|
-            f.write(JSON.pretty_generate(result))
+
+        ## Loop over posts, appending the pageviews data to the metadata
+        site.posts.each do |post|
+
+          if defined?(result[post.url][1]) 
+            views = result[post.url][1]
+          else 
+            views = "(not calculated)"
+          end
+          post.data['pageviews'] = views
         end
       end
   end
 
 end
-
-Liquid::Template.register_tag('pageviews', Jekyll::GoogleAnalytics)
 

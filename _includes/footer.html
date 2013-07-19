@@ -18,6 +18,15 @@
              class="btn btn-mini"><span class="showtooltip" 
                                         title="switch to light theme"><i class="icon-certificate"></i>
                                   </span></a>
+
+
+           <a onclick="switch_style('white'); 
+                      recordOutboundLink(this, 'Outbound Links', 'white theme'); 
+                      return false;" 
+             name="theme" value="white" id="white" 
+             class="btn btn-mini"><span class="showtooltip" 
+                                        title="switch to white theme"><i class="icon-circle-blank"></i>
+                                 </span></a>
         </form>
       </div>
     </div>
@@ -26,9 +35,7 @@
   <div class="row">
     <div class="span3 socialicons" style="font-size:20px" typeof="foaf:Person" about="#me">
       <p>
-          <a rel="foaf:account" alt="email" href="mailto:{{site.author.email}}" 
-             onclick="recordOutboundLink(this, 'Outbound Links', 'email'); 
-             return false;"><span class="showtooltip" title="email me"><i class="icon-envelope-alt"></i></span></a>
+          <script type="text/javascript" src="/assets/js/obfuscate-email-link.js" language="javascript"></script> 
           <a rel="foaf:account" alt="twitter" href="https://twitter.com/{{site.author.twitter}}" 
              onclick="recordOutboundLink(this, 'Outbound Links', 'Twitter'); 
              return false;"><span class="showtooltip" title="follow me on twitter (reading, discussing)"><i class="icon-twitter"></i></span></a> 
@@ -45,8 +52,8 @@
            citations on google-scholar
            stackoverflow
       -->
-      <a alt="rss" type="application/atom+xml" href="/atom.xml"  
-         class="showtooltip" title="subscribe to RSS feeds for my open lab notebook" 
+      <a alt="rss" type="application/atom+xml" href="/blog.xml"  
+         class="showtooltip" title="RSS feeds for my blog-style entries. See the feed on my lab notebook (/atom.xml) to follow all entries instead." 
          onclick="recordOutboundLink(this, 'Outbound Links', 'RSS'); 
          return false;"><i class="icon-rss"></i></a>
        </p>
