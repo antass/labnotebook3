@@ -25,16 +25,14 @@ author:
   twitter: antass
   github: antass
   mendeley: anna-tassinari
-url: http://www.aniatassinari.com/labnotebook/
+#url: http://www.carlboettiger.info
 repo: https://github.com/antass/labnotebook # used in linking history
 
 ## Google Analytics key (in _includes/analytics.html)
-analytics: UA-37614568-1 
-
-## Set base_path for links
+analytics: UA-37614568-1
 
 ## Markdown Parser (standard Jekyll argument, extended to special parser)
-markdown: pandoc
+markdown: kramdown
 pandoc:
   extensions: 
     - smart
@@ -43,6 +41,4 @@ pandoc:
 #    - self-contained                             # Archive images in posts as URIs.  Very slow, for archiving only.  
 #    - mathml                                     # Use mathml for equations (Archival, HTML5/XML valid syntax)
 
-## Comments
-comments :
-  provider : false
+

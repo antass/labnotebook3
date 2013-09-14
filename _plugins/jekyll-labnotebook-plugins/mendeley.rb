@@ -382,7 +382,7 @@ class Mendeley
 
       auth = {access_token: @access_token}
 
-      File.open('/home/cboettig/.mendeley_auth.yaml', 'w') {|f| YAML.dump(auth, f)}
+      File.open('/Users/antass/.mendeley_auth.yaml', 'w') {|f| YAML.dump(auth, f)}
 
       puts "Done. The auth.yaml file should have all it needs"
       return @access_token
@@ -430,21 +430,28 @@ class Mendeley
   include Authorise
   include Browser
 
-  config = YAML::load(File.open("/home/cboettig/.mendeley_config.yaml"))
+  config = YAML::load(File.open("/Users/antass/.mendeley_config.yaml"))
   $default_key = config[":default_key"]
   $default_secret = config[":default_secret"]
   $default_site = config[":default_site"]
 
-  ## Debugging
-  puts "Keys successfully loaded for " + $default_site + " Key: " + $default_key + " Secret: " + $default_secret
+puts "loaded config"
 
+#puts "secret" + $default_secret
+#puts "key" + $default_key
+#puts "site" + $default_site
+  
+
+## Debugging
+ # puts "Keys successfully loaded for " + $default_site + " Key: " + $default_key + " Secret: " + $default_secret
+#
 
   def initialize(username=nil, password=nil, consumer_key=$default_key, consumer_secret=$default_secret, site=$default_site)
-
+puts "after nil"
     SafeYAML::OPTIONS[:whitelisted_tags] = ["!ruby/object:OAuth::AccessToken"]
 
-    if File.exist?("/home/cboettig/.mendeley_auth.yaml") && ((username && password) == nil)
-      auth_contents = YAML.load(File.open("/home/cboettig/.mendeley_auth.yaml"), :safe => false)
+    if File.exist?("/Users/antass/.mendeley_auth.yaml") && ((username && password) == nil)
+      auth_contents = YAML.load(File.open("/Users/antass/.mendeley_auth.yaml"), :safe => false)
       $access_token = auth_contents[:access_token]
     end
 

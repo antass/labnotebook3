@@ -14,14 +14,14 @@ title: Research
     <meta name="author" content="Carl Boettiger">
 
     <!-- Le styles -->
-    <link href="/assets/css/light.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/assets/css/grid.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <link href="{{ site.url }}/assets/css/light.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/style.css">
 
     <!-- Le javascript -->
-    <script type="text/javascript" src="/assets/js/jquery.js"></script>
-    <script type="text/javascript" src="/assets/js/jquery-1.7.1.min.js"></script>
-    <script type="text/javascript" src="/assets/js/strftime.js"></script>
+    <script type="text/javascript" src="{{ site.url }}/assets/js/jquery.js"></script>
+    <script type="text/javascript" src="{{ site.url }}/assets/js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="{{ site.url }}/assets/js/strftime.js"></script>
     <script type="text/javascript">
     (function ($, undefined) {
 
@@ -77,7 +77,7 @@ title: Research
         $item.appendTo("#repos");
       }
 
-      $.getJSON("https://api.github.com/users/cboettig/repos?per_page=100&callback=?", function (result) {
+      $.getJSON("https://api.github.com/users/antass/repos?per_page=100&callback=?", function (result) {
         var repos = result.data;
 
         $(function () {
@@ -152,7 +152,7 @@ title: Research
         <div id="statistics" class="grid-1 alpha header">
           <h1>Statistics</h1>
           <p>
-            <a href="https://github.com/cboettig/repositories"><span id="num-repos">&nbsp;</span> public repos</a>
+            <a href="https://github.com/antass/repositories"><span id="num-repos">&nbsp;</span> public repos</a>
             <br>
           </p>
           <p class="email"><a href="mailto:cboettig@ucdavis.edu">cboettig@ucdavis.edu</a></p>

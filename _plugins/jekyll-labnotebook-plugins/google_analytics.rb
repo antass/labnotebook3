@@ -39,6 +39,7 @@
 require 'garb'
 require 'chronic'
 require 'json'
+require 'yaml'
 
 module Jekyll
 
@@ -63,13 +64,11 @@ module Jekyll
         
         ## Read in credentials and authenticate 
         cred = YAML.load_file("/Users/antass/.garb_auth.yaml")
-
-        puts "Garb authenticating for " + cred[":username"]
-
-        Garb::Session.api_key = cred[":api_key"]
-        token = Garb::Session.login(cred[":username"], cred[":password"])
-        profile = Garb::Management::Profile.all.detect {|p| p.web_property_id == cred[":ua"]}
-
+        puts "Garb authenticating for " + cred[':username']
+        
+        Garb::Session.api_key = cred[':api_key']
+        token = Garb::Session.login(cred[':username'], cred[':password'])
+        profile = Garb::Management::Profile.all.detect {|p| p.web_property_id == cred[':ua']}
         # place query, customize to modify results
         data = Exits.results(profile, 
                              :start_date => Chronic.parse("2011-01-01"))

@@ -20,11 +20,8 @@ gem "chronic"
 gem "twitter"
 
 # Google Analytics API, for google_analytics.rb plugin
-<<<<<<< HEAD
 gem "garb", :git => 'https://github.com/Sija/garb.git'#, ">=0.9.7"
-=======
-gem "garb", :git=>'git@github.com:Sija/garb.git'
->>>>>>> upstream/master
+#gem "garb", :git=>'git@github.com:Sija/garb.git'
 
 # JSON parser (probably not needed, garb and others import multi_json already)
 gem "json"
