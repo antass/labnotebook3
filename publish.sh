@@ -8,7 +8,7 @@ git push
 
 ## Compile the site
 echo 'Building site'
-jekyll
+jekyll build
 
 ## Copy site to repository for github hosting
 echo 'Uploading site to Dreamhost'
