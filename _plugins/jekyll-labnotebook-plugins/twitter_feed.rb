@@ -29,7 +29,6 @@ module Jekyll
 
       Twitter.connection_options = {:timeout => 50, :open_timeout => 20} # increase timeout to avoid frequent errors 
       cred = YAML.load_file("/Users/antass/.twitter_auth.yaml")
-
       @client = Twitter::Client.new(
         :consumer_key => cred[":consumer_key"],
         :consumer_secret => cred[":consumer_secret"],
@@ -50,4 +49,3 @@ module Jekyll
 end
 
 Liquid::Template.register_tag('twitter_feed', Jekyll::TwitterFeed)
-

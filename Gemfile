@@ -1,5 +1,5 @@
 source "https://rubygems.org/"
-ruby '2.0.0' 
+ruby '1.9.3' 
 
 # The Jekyll gem 
 gem "jekyll"
@@ -33,5 +33,7 @@ gem "pandoc-ruby"
 gem "git", :git=>'git@github.com:schacon/ruby-git'
 
 gem "redcarpet"
+
+gem "time", "0.0.1"
 
 # vim: syntax=ruby

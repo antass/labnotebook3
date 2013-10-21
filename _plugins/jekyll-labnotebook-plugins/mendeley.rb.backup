@@ -363,8 +363,8 @@ class Mendeley
   ### Authorize ##############################################
 
   module Authorise
-    def self.oapi_authorise(consumer_key, consumer_secret, site, username, password)
-      puts username
+    def self.oapi_authorise(consumer_key, consumer_secret, site, username=nil, password=nil)
+
       @consumer = OAuth::Consumer.new(consumer_key, consumer_secret, {
         :site => site,
           :http_method => :get,
@@ -388,7 +388,7 @@ class Mendeley
       return @access_token
     end
 
-    def self.get_verifier(username, password)
+    def self.get_verifier(username=nil, password=nil)
       if username && password
         verifier = Browser.login_get_verifier(username, password, @request_token.authorize_url)
       else     
@@ -409,7 +409,6 @@ class Mendeley
   module Browser
     # Creates a browser instance, authenticates as the user (w/ username and password provided), gets verification code
     def self.login_get_verifier(username=nil, password=nil, authorize_url=nil)
-      
       $browser = Watir::Browser.new
       #TODO Anything other than the happy path
       $browser.goto(authorize_url)
@@ -533,7 +532,6 @@ end
 
     ## Define the renderer, that actually calls the API and formats the results
     def render(context)
-      puts "Generating Mendeley feed with Mendeley API and mendeley.rb"
 
 
       m = Mendeley.new

@@ -6,11 +6,6 @@ github: metanalysis
 
 ---
 
-{% capture project_abstract %} 
-**Microarray meta-analysis of airway datasets using a systems biology approach.**
-
-I am working on putting together a comprehensive study of multiple airway epithelium microarray datasets from patients with varying lung cancer and COPD status, as well as smoking history. By examining data from a network biology perspective, I am hoping to elucidate the gene regulatory mechanisms that govern the onset and progression of these diseases.
-{% endcapture %} 
 
 {% capture project_collaborators %}
 - Jen Beane 
@@ -23,17 +18,7 @@ I am working on putting together a comprehensive study of multiple airway epithe
 {% endcapture %}
 
 
-{% capture project_issues %}
-Issues feed from metanalysis repo.
 
-{% octokit_issues metanalysis%}
-{% endcapture %}
-
-{% capture project_commits %}
-This commits feed from master branch. 
-
-{% octokit_commits metanalysis%}
-{% endcapture %}
 
 {% capture project_feed %}
 {% mendeley_feed 3384511/microarray-airway-meta-analysis, 4 %}
